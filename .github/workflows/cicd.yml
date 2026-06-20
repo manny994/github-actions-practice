@@ -21,6 +21,7 @@ jobs:
       steps:
         - name: build using Docker
           run: echo "Testing the app"
+          
     deploy:
       needs: [build,test]
       runs-on: ubuntu-latest
